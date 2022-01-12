@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*  WE DO ITS POSITION RELATIVE BCOZ  */
+.clockContainer{
+    position: relative;
+    background-image: url("clock.png");
+    /*  IF WE USE VH INSTEAD OF VW IN HEIGHT THEN REESPOSIVENESS WAS NOT COMING SO USE ONLY 1 */
+    /*  BY USING BOTH VW WE CANNOT SEE THE EFFECT OF ZOOM */
+    height: 40vw;
+    width: 40vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: auto;
+    
+}
+
+#hour , #minute , #second{
+    position: absolute;
+    background-color: black;
+    border-radius: 2vh;
+    /*  IT ROTATES FROM CENTER */
+    transform-origin: bottom;
+}
+
+/*  WE USE % BCOZ WE TRY TO MAKE IT RESPONSIVE */
+/*  WE USE OPACITY TO SEE OVERLAP & display none to see whats below it*/
+#hour{
+    width: 1%;
+    height: 20%;
+    top: 28.9%;
+    left: 49.4%;
+    opacity: 0.8;
+    /* display: none; */
+}
+
+#minute{
+    width: 1%;
+    height: 25%;
+    top: 24.5%;
+    left: 49.4%;
+    opacity: 0.8;
+    /* display: none; */
+}
+
+#second{
+    width: 1%;
+    height: 30%;
+    top: 20%;
+    left: 49.5%;
+    opacity: 0.8;
+    /* display: none; */
+}
